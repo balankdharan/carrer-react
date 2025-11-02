@@ -6,7 +6,7 @@ A modern React application built to practice React Router concepts with an updat
 
 ## 🎯 Project Overview
 
-This is a practice project focused on implementing React Router with multiple routes, nested routing, and modern UI design patterns. The application features a floating navigation bar, breadcrumb navigation, and a professional multi-page layout.
+This is a practice project focused on implementing React Router with multiple routes, nested routing, and modern UI design patterns. The application features a floating navigation bar and a professional multi-page layout.
 
 ## ✨ Features
 
