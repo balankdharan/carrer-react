@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+# React Router Practice App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern React application built to practice React Router concepts with an updated UI design featuring a floating navbar and contemporary styling.
 
-## Available Scripts
+![App Screenshot](./screenshot.png)
 
-In the project directory, you can run:
+## 🎯 Project Overview
 
-### `npm start`
+This is a practice project focused on implementing React Router with multiple routes, nested routing, and modern UI design patterns. The application features a floating navigation bar, breadcrumb navigation, and a professional multi-page layout.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✨ Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Floating Navigation Bar** - Modern glassmorphism navbar with active state indicators
+- **Multiple Routes** - Home, About, Help, and Careers pages
+- **Nested Routing** - Help section with FAQ and Contact pages
+- **Modern UI Design** - Contemporary color scheme with smooth animations
+- **Responsive Layout** - Mobile-friendly design that works on all devices
+- **JSON Server Integration** - Mock backend API for career listings
 
-### `npm test`
+## 🚀 Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository
 
-### `npm run build`
+```bash
+git clone <your-repo-url>
+cd routerApp
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install dependencies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🏃‍♂️ Running the Application
 
-### `npm run eject`
+### Start the React Development Server
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The app will open at [http://localhost:3000](http://localhost:3000)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Start the JSON Server (Backend)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+In a **separate terminal**, run:
 
-## Learn More
+```bash
+json-server --watch data/db.json --port 4000
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The mock API will be available at [http://localhost:4000](http://localhost:4000)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🎨 Design Features
 
-### Code Splitting
+- Floating navbar with backdrop blur effect
+- Interactive card layouts
+- Hover animations and transitions
+- Responsive grid systems
+- Modern glassmorphism effects
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🛠️ Technologies Used
 
-### Analyzing the Bundle Size
+- **React** - Frontend framework
+- **React Router** - Client-side routing
+- **JSON Server** - Mock REST API
+- **CSS3** - Custom styling and animations
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🔧 Development Scripts
 
-### Making a Progressive Web App
+```bash
+# Start development server
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+# Start JSON server
+json-server --watch data/db.json --port 4000
+```
 
-### Deployment
+## 🚀 Future updates
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Add Tailwind CSS
+- Include Backend
 
-### `npm run build` fails to minify
+## 📄 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is open source and available for educational purposes.
+
+## 🙏 Acknowledgments
+
+- Built with Create React App
+- Routing powered by React Router
+- Mock API by JSON Server

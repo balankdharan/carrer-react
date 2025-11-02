@@ -1,15 +1,35 @@
-import { useLoaderData, Link } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
+import { useState } from "react";
+import CareerModal from "./CareerModal";
 
 export default function Careers() {
   const careers = useLoaderData();
+  const [selectedCareer, setSelectedCareer] = useState(null);
+
+  const handleCareerClick = (career) => {
+    setSelectedCareer(career);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedCareer(null);
+  };
+
   return (
     <div className="careers">
       {careers.map((career) => (
-        <Link to={career.id.toString()} key={career.id}>
+        <div
+          key={career.id}
+          onClick={() => handleCareerClick(career)}
+          className="career-card"
+        >
           <p>{career.title}</p>
           <p>Based in {career.location}</p>
-        </Link>
+        </div>
       ))}
+
+      {selectedCareer && (
+        <CareerModal career={selectedCareer} onClose={handleCloseModal} />
+      )}
     </div>
   );
 }

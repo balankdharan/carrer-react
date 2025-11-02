@@ -1,18 +1,20 @@
 import { NavLink, Outlet } from "react-router-dom";
-import BreadCrumbs from "../components/BreadCrumbs";
+// import BreadCrumbs from "../components/BreadCrumbs";
 
 export default function RootLayout() {
   return (
     <div>
-      <header>
-        <nav>
+      <header className="floating-header">
+        <nav className="floating-nav">
           <h1>Router</h1>
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="about">About</NavLink>
-          <NavLink to="help">Help</NavLink>
-          <NavLink to="careers">Careers</NavLink>
+          <div className="nav-links">
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="about">About</NavLink>
+            <NavLink to="help">Help</NavLink>
+            <NavLink to="careers">Careers</NavLink>
+          </div>
         </nav>
-        <BreadCrumbs />
+        {/* <BreadCrumbs /> */}
       </header>
       <main>
         <Outlet />
